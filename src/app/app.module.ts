@@ -8,11 +8,13 @@ import { CategoriaComponent } from './categoria/categoria.component';
 
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { TipoComponent } from './tipo/tipo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    TipoComponent
   ],
   imports: [
     BrowserModule,
