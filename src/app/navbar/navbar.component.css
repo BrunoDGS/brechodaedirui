@@ -1,0 +1,30 @@
+.navbar{
+    background-color:violet;
+    width: 100%;
+    padding: 20px 0px;
+}
+.navbar-menu{
+    background-color: #A9A9A9;
+    position: fixed;
+    width: 210px;
+    top: 0;
+    bottom: 0;
+    padding: 15px;
+    margin: 0;
+    right: 0;
+    z-index: 999999;
+    list-style: none;
+}
+.bar-toogle{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-menuitem a {
+    color: #c0bbb7;
+    text-decoration: none;
+}
+
+.navbar-menuitem a:hover{
+    color: #FFFFFF;
+}
