@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriaComponent implements OnInit {
 
+  categorianome: string;
   constructor() { }
-
   ngOnInit(): void {
   }
 

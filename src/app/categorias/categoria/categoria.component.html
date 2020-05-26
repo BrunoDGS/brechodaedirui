@@ -1,0 +1,15 @@
+<div class="container">
+    <form #f="ngForm">
+        <h2>Cadastro de Categorias</h2> 
+        <label>Nome: </label>
+        <input type="text" pInputText class="input-nome" name="categorianome" 
+        [(ngModel)]="categorianome" required minlength="2" #nome="ngModel">
+        
+        <div class="ui-messages ui-messages-error" *ngIf="nome.hasError('required') && nome.touched">Informe um nome válido</div>
+        <div class="ui-messages ui-messages-error" *ngIf="nome.hasError('minlength') && nome.touched">Informe um nome de tamanho maior que 2 dígitos</div>
+        
+        <div class="botao-categoria">
+            <p-button label="Salvar" [disabled]="!f.valid" type="submit"></p-button>         
+        </div>
+    </form>
+</div>

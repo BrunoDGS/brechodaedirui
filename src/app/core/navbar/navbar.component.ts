@@ -10,7 +10,6 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   exibirMenu: boolean;
-  
   ngOnInit(): void {
   }
 

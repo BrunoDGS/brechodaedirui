@@ -3,28 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CategoriaComponent } from './categoria/categoria.component';
-
 
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
-import { TipoComponent } from './tipo/tipo.component';
 import { FormsModule } from '@angular/forms';
-import { NavbarComponent } from './navbar/navbar.component';
+
+import { CategoriasModule } from './categorias/categorias.module';
+import { TiposModule } from './tipos/tipos.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CategoriaComponent,
-    TipoComponent,
-    NavbarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     InputTextModule,
     ButtonModule,
-    FormsModule
+    FormsModule,
+
+    CategoriasModule,
+    TiposModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
